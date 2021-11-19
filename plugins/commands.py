@@ -17,10 +17,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8')
+                InlineKeyboardButton('💥My Group💥', url='https://t.me/Malamove1')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ℹ️ ℍ𝕖𝕝𝕡', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -35,13 +35,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ✞︎ 𝔸𝕕𝕕 𝕄𝕖 𝕋𝕠 𝕐𝕠𝕦𝕣 𝔾𝕣𝕠𝕦𝕡𝕤 ✞︎ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8')
+            InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 𝔾𝕣𝕠𝕦𝕡♡︎', url='https://t.me/Malamove1')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ ℍ𝕖𝕝𝕡', callback_data='help'),
+            InlineKeyboardButton('☻︎ 𝐀𝐛𝐨𝐮𝐭 ☻︎', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -60,13 +60,13 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "❣︎ 𝐉𝐨𝐢𝐧 𝐌𝐲 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ❣︎", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton(" 🔄 𝑇𝑟𝑦 𝐴𝑔𝑎𝑖𝑛", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**",
@@ -76,13 +76,19 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ✞︎ 𝔸𝕕𝕕 𝕄𝕖 𝕋𝕠 𝕐𝕠𝕦𝕣 𝔾𝕣𝕠𝕦𝕡𝕤 ✞︎ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8')
+            InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('☠︎ 𝑀𝑦 𝐷𝑎𝑣 ☠︎︎', url='https://t.me/Sarathooq')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 𝔾𝕣𝕠𝕦𝕡 1♡︎', url='https://t.me/Malamove1'),
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 𝔾𝕣𝕠𝕦𝕡 2♡︎', url='https://t.me/Malamove2')
+            ],[
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 ℂ𝕙𝕒𝕟𝕟𝕖𝕝 1♡︎', url='https://t.me/Malamove3'),
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 ℂ𝕙𝕒𝕟𝕟𝕖𝕝 2♡︎', url='https://t.me/Malamove4')
+            ],[
+            InlineKeyboardButton('ℹ️ ℍ𝕖𝕝𝕡', callback_data='help'),
+            InlineKeyboardButton('☻︎ 𝐀𝐛𝐨𝐮𝐭 ☻︎', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
