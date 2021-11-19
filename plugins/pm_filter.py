@@ -415,11 +415,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ✞︎ 𝔸𝕕𝕕 𝕄𝕖 𝕋𝕠 𝕐𝕠𝕦𝕣 𝔾𝕣𝕠𝕦𝕡𝕤 ✞︎ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 𝕊𝕖𝕒𝕣𝕔𝕙 🔍', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8')
+            InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('☠︎ 𝑀𝑦 𝐷𝑎𝑣 ☠︎︎', url='https://t.me/Sarathooq')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 𝔾𝕣𝕠𝕦𝕡 1♡︎', url='https://t.me/Malamove1'),
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 𝔾𝕣𝕠𝕦𝕡 2♡︎', url='https://t.me/Malamove2')
+            ],[
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 ℂ𝕙𝕒𝕟𝕟𝕖𝕝 1♡︎', url='https://t.me/Malamove3'),
+            InlineKeyboardButton('♡︎𝕁𝕠𝕚𝕟 𝕄𝕪 ℂ𝕙𝕒𝕟𝕟𝕖𝕝 2♡︎', url='https://t.me/Malamove4')
+            ],[
+            InlineKeyboardButton('ℹ️ ℍ𝕖𝕝𝕡', callback_data='help'),
+            InlineKeyboardButton('☻︎ 𝐀𝐛𝐨𝐮𝐭 ☻︎', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -429,14 +435,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🔰𝕄𝕒𝕟𝕦𝕒𝕝 𝔽𝕚𝕝𝕥𝕖𝕣🔰', callback_data='manuelfilter'),
+            InlineKeyboardButton('🔰𝔸𝕦𝕥𝕠 𝔽𝕚𝕝𝕥𝕖𝕣🔰', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('🔰ℂ𝕠𝕟𝕟𝕖𝕔𝕥𝕚𝕠𝕟🔰', callback_data='coct'),
+            InlineKeyboardButton('🔰𝔼𝕩𝕥𝕣𝕒 𝕄𝕠𝕕𝕤🔰', callback_data='extra')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('🏠 Home 🏠', callback_data='start'),
+            InlineKeyboardButton('🔮 Status 🔮', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
